@@ -32,13 +32,16 @@ This function is  for interacting with the API's in the given documentation, all
 
 The postEntity function is designed to simplify the API interaction process. Here's how it works:
 
-    Parameters: It takes two parameters: entity and payload. entity refers to the specific endpoint we're targeting aka our web 3 space objects('polyanets', 'soloons', 'cometh'), and payload is the data we're sending which is the data in our arrays we constructed earlier.
+-Parameters: 
+    It takes two parameters: entity and payload. entity refers to the specific endpoint we're targeting aka our web 3 space objects('polyanets', 'soloons', 'cometh'), and payload is the data we're sending which is the data in our arrays we constructed earlier.
 
-    URL Construction: It constructs the request URL dynamically based on the baseUrl and the entity parameter, so if we get an error here we just look in our .config file
+-URL Construction:
+    It constructs the request URL dynamically based on the baseUrl and the entity parameter, so if we get an error here we just look in our .config file
 
-    Posting Data: Utilizing Axios, it sends a POST request to the constructed URL.
+Posting Data: Utilizing Axios, it sends a POST request to the constructed URL.
 
-    Success and Error Handling: Upon a successful post, it logs the entity and payload to the console admittingly, yes our console will be cluttered, but in my experience building web3 projects it aint all that bad especially if you want to have a log on what is being sent to the API locally, being no stranger to errors anything information is useful, this provides us back with  immediate feedback about the operations we are running. If an error occurs, it logs a detailed error message, including the error response from the server if available.
+-Success and Error Handling: 
+    Upon a successful post, it logs the entity and payload to the console admittingly, yes our console will be cluttered, but in my experience building web3 projects it aint all that bad especially if you want to have a log on what is being sent to the API locally, being no stranger to errors anything information is useful, this provides us back with  immediate feedback about the operations we are running. If an error occurs, it logs a detailed error message, including the error response from the server if available.
 
 ### `main.js`
 
